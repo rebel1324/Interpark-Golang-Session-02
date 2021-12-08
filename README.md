@@ -64,6 +64,7 @@ Golang을 사용하여 쉽게 배포할 수 있는 서비스 제작
         * `IME` uim - 벼루
     * Jetbrain Goland + VIM
     * fish
+    * 개인 dotfile은 **[dotfiles 리포지토리](https://github.com/rebel1324/dotfiles)**에서 확인 가능합니다.
 
 ## 질문
 

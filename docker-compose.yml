@@ -1,11 +1,24 @@
 version: "3"
 services:
+  mongo:
+    restart: always
+    image: mongo:latest
+    ports: 
+      # expose port
+      - 27017:27017
+    volumes:
+      - db-data:/data/db
   golang:
     # image...
     # 이미지가 없는 이유는 실행할때마다 빌드할꺼라서
-    build: ./
+    image: example.com/server:master
+    build: ./cmd
       #dockerfile: Dockerfile
       #context: .
     ports:
       - "8080:8080"
     #volume:
+
+volumes:
+  db-data:
+

@@ -1,0 +1,11 @@
+version: "3"
+services:
+  golang:
+    # image...
+    # 이미지가 없는 이유는 실행할때마다 빌드할꺼라서
+    build: ./
+      #dockerfile: Dockerfile
+      #context: .
+    ports:
+      - "8080:8080"
+    #volume:
